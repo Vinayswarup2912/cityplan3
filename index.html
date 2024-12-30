@@ -3,98 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My DAA Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Design and Analysis of Algorithms Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            box-sizing: border-box;
         }
-        header {
+
+        nav {
             background-color: #333;
+            overflow: hidden;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
             color: white;
-            padding: 15px;
-            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 14px 20px;
+            display: block;
         }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+
         section {
-            padding: 20px;
-            margin: 10px;
+            padding: 50px;
+            margin: 20px;
             background-color: white;
-            border-radius: 5px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-bottom: 20px;
         }
+
         h1, h2 {
             color: #333;
         }
-        .content {
-            margin-bottom: 30px;
+
+        p {
+            color: #666;
+            font-size: 16px;
         }
-        .team-member {
-            display: inline-block;
-            width: 45%;
-            padding: 15px;
-            margin: 10px;
-            background-color: #f9f9f9;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #333;
+
+        .button {
+            background-color: #4CAF50;
             color: white;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
         }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
     </style>
 </head>
 <body>
-    <header>
-        <h1>My DAA Portfolio</h1>
-        <p>Introduction to Design and Analysis of Algorithms</p>
-    </header>
 
-    <section>
-        <h2>1. Introduction</h2>
-        <div class="content">
-            <p>Welcome to my Design and Analysis of Algorithms (DAA) portfolio. This course has helped me understand the foundational principles behind algorithm design, optimization techniques, and their applications in solving real-world problems. The practical exercises have provided me with a deeper understanding of space and time complexity, as well as the importance of efficient problem-solving approaches.</p>
-        </div>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#project-overview">Project Overview</a></li>
+            <li><a href="#course-reflections">Course Reflections</a></li>
+            <li><a href="#team-details">Team Details</a></li>
+            <li><a href="https://github.com/Vinayswarup2912/CITYPLAN_" target="_blank">GitHub Repository</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Welcome to the DAA Portfolio</h1>
+        <p>This portfolio showcases the work done during the Design and Analysis of Algorithms course, including reflections on key learning areas and project details.</p>
     </section>
 
-    <section>
-        <h2>2. Course Project Introduction</h2>
-        <div class="content">
-            <p>For our course project, our team worked on solving problems related to efficient graph algorithms, sorting and searching techniques, and optimization strategies. We focused on analyzing city traffic systems, optimizing data flow, and improving route selection algorithms. Our findings, along with the business case and team details, are discussed further in this section.</p>
-        </div>
+    <!-- Project Overview Section -->
+    <section id="project-overview">
+        <h2>Project Overview</h2>
+        <p>The project is focused on solving a specific problem in the domain of city planning. It involves analyzing various business cases and applying algorithmic techniques to optimize the design. The problem space was identified through extensive research and white paper findings.</p>
+        <p>The business cases were divided among the team members based on their strengths and interests. Each member worked on a different aspect, from data structures to algorithm implementation.</p>
     </section>
 
-    <section>
-        <h2>3. Course Learning Reflections</h2>
-        <div class="content">
-            <h3>Reflections from Team Members</h3>
-            <div class="team-member">
-                <h4>Member 1: Recursion</h4>
-                <p>Recursion has been one of the most intriguing topics for me. I learned how to break complex problems into smaller subproblems, which can be solved more efficiently. Understanding the base case and recursive case is key to writing recursive algorithms.</p>
-            </div>
-            <div class="team-member">
-                <h4>Member 2: Space/Time Efficiency</h4>
-                <p>Space and time efficiency are crucial when designing algorithms. I have learned to analyze the trade-offs between time complexity and space complexity to optimize the performance of algorithms.</p>
-            </div>
-            <div class="team-member">
-                <h4>Member 3: Design Principles</h4>
-                <p>The design principles of algorithms, such as divide and conquer, greedy approaches, and dynamic programming, were vital in solving problems effectively. These principles helped us achieve efficient solutions to real-world problems.</p>
-            </div>
-            <div class="team-member">
-                <h4>Member 4: Graph Algorithms</h4>
-                <p>Graph algorithms were fascinating to study, especially when applied to network flow and optimization problems. I gained insights into traversal techniques like DFS and BFS and their application in solving real-world routing issues.</p>
-            </div>
-        </div>
+    <!-- Course Reflections Section -->
+    <section id="course-reflections">
+        <h2>Course Learning Reflections</h2>
+        <h3>Key Learning Areas</h3>
+        <p>Throughout this course, we have studied various types of problems, including those related to iteration, recursion, and backtracking. We've also explored space and time efficiency, which are crucial when solving large-scale problems.</p>
+        <p>The course has introduced us to several important data structures like trees (BST, AVL, etc.), graphs, and arrays, along with algorithmic techniques such as sorting, searching, and graph algorithms.</p>
+        <p>In addition, we've reflected on design principles, such as breaking down a problem into smaller components and balancing trade-offs between simplicity and optimization in our solutions.</p>
     </section>
 
-    <footer>
-        <p>&copy; 2024 My DAA Portfolio | All Rights Reserved</p>
-    </footer>
+    <!-- Team Details Section -->
+    <section id="team-details">
+        <h2>Team Details</h2>
+        <p>This project was a collaborative effort, with each team member contributing to different aspects of the project. Below are the details of the team members and their respective roles:</p>
+        <ul>
+            <li>Member 1: Role and Contribution</li>
+            <li>Member 2: Role and Contribution</li>
+            <li>Member 3: Role and Contribution</li>
+            <li>Member 4: Role and Contribution</li>
+        </ul>
+    </section>
+
+    <!-- GitHub Repository Link -->
+    <section>
+        <a href="https://github.com/Vinayswarup2912/CITYPLAN_" target="_blank" class="button">Visit GitHub Repository</a>
+    </section>
+
 </body>
 </html>
-

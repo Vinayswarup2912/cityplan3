@@ -13,48 +13,72 @@
             background-color: #f4f4f4;
             color: #333;
         }
-        
+
         /* Header Style */
         header {
             text-align: center;
-            font-size: 36px;
+            font-size: 40px;
             font-weight: bold;
             padding: 20px;
-            background-color: #e74c3c; /* Red background for the strip */
+            background-color: #e74c3c;
             color: white;
-            border-bottom: 5px solid #c0392b;
-        }
-
-        /* Subheading Styles */
-        h2 {
-            font-size: 24px;
-            font-weight: bold;
-            margin-top: 30px;
-            color: #333;
-            text-align: center;
+            border-bottom: 8px solid #c0392b;
             text-transform: uppercase;
-            font-family: 'Verdana', sans-serif;
-            letter-spacing: 1px;
+            letter-spacing: 3px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
 
-        /* Content Border */
+        /* Section Styling */
+        section {
+            margin: 40px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 28px;
+            font-weight: 600;
+            color: #2c3e50;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 30px;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            background-color: #e74c3c;
+            bottom: -10px;
+            left: 0;
+            border-radius: 2px;
+        }
+
+        /* Content Border & Shadow */
         .content-border {
             background-color: #fff;
-            border: 2px solid #ddd;
-            border-radius: 10px;
-            padding: 20px;
-            margin-top: 30px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-top: 40px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .content-border:hover {
+            transform: translateY(-10px);
         }
 
         /* Image Styling */
         img {
             width: 100%;
-            max-width: 700px;
+            max-width: 800px;
             margin-top: 20px;
             display: block;
             margin-left: auto;
             margin-right: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
 
         /* Related Links Section */
@@ -64,25 +88,43 @@
         }
 
         .related-links li {
-            margin: 10px 0;
+            margin: 15px 0;
         }
 
         .related-links a {
             text-decoration: none;
             color: #3498db;
-            font-size: 18px;
+            font-size: 20px;
             font-weight: bold;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
         }
 
         .related-links a:hover {
             color: #2980b9;
         }
 
+        /* Styling for Backgrounds & Borders */
+        .container {
+            background-color: #ecf0f1;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 50px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
         .footer {
             text-align: center;
             margin-top: 50px;
-            font-size: 16px;
-            color: #555;
+            font-size: 18px;
+            color: #7f8c8d;
+            padding: 10px;
+        }
+
+        /* Hover Effects for Images */
+        .city-plan img:hover, .business-cases img:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
         }
     </style>
 </head>
@@ -96,19 +138,23 @@
     <!-- City Plan Section -->
     <section class="city-plan">
         <h2>City Plan</h2>
-        <img src="https://01fe23bcs277.github.io/daa/city.jpg" alt="City Plan">
+        <div class="content-border">
+            <img src="https://01fe23bcs277.github.io/daa/city.jpg" alt="City Plan">
+        </div>
     </section>
 
     <!-- Business Cases Section -->
     <section class="business-cases">
         <h2>Business Cases</h2>
-        <img src="https://01fe23bcs277.github.io/daa/Screenshot%202024-12-29%20232710.png" alt="Business Cases">
+        <div class="content-border">
+            <img src="https://01fe23bcs277.github.io/daa/Screenshot%202024-12-29%20232710.png" alt="Business Cases">
+        </div>
     </section>
 
     <!-- Related Links Section -->
-    <div class="content-border">
+    <section class="related-links">
         <h2>Related Links</h2>
-        <div class="related-links">
+        <div class="content-border">
             <ul>
                 <li><a href="https://01fe23bcs277.github.io/daa/case1.html" target="_blank">Business Case 1</a></li>
                 <li><a href="https://01fe23bcs277.github.io/daa/case2.html" target="_blank">Business Case 2</a></li>
@@ -118,8 +164,7 @@
                 <li><a href="https://01fe23bcs277.github.io/daa/case6.html" target="_blank">Business Case 6</a></li>
             </ul>
         </div>
-    </div>
-
+    </section>
 </div>
 
 <div class="footer">

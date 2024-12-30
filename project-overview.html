@@ -1,181 +1,127 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Overview - D-12</title>
-    <style>
-        /* General Styles */
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to bottom right, #00bcd4, #8e44ad);
-            color: #333;
-        }
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #bdc3c7, #7f8c8d); /* Gray gradient background */
+    color: #333;
+}
 
-        /* Header Style */
-        header {
-            text-align: center;
-            font-size: 40px;
-            font-weight: bold;
-            padding: 20px;
-            background-color: #e74c3c;
-            color: white;
-            border-bottom: 8px solid #c0392b;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
+/* Header Style */
+header {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px;
+    background-color: #e74c3c;
+    color: white;
+    border-bottom: 8px solid #c0392b;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
 
-        /* Section Styling */
-        section {
-            margin: 40px 20px;
-            text-align: center;
-        }
+/* Section Styling */
+section {
+    margin: 40px 20px;
+    text-align: center;
+}
 
-        h2 {
-            font-size: 28px;
-            font-weight: 600;
-            color: #2c3e50;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-top: 30px;
-            position: relative;
-        }
+h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    position: relative;
+}
 
-        h2::after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 4px;
-            background-color: #e74c3c;
-            bottom: -10px;
-            left: 0;
-            border-radius: 2px;
-        }
+h2::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #e74c3c;
+    bottom: -10px;
+    left: 0;
+    border-radius: 2px;
+}
 
-        /* Content Border & Shadow */
-        .content-border {
-            background-color: #fff;
-            border-radius: 12px;
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-            padding: 30px;
-            margin-top: 40px;
-            transition: transform 0.3s ease-in-out;
-        }
+/* Content Border & Shadow */
+.content-border {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-top: 40px;
+    transition: transform 0.3s ease-in-out;
+}
 
-        .content-border:hover {
-            transform: translateY(-10px);
-        }
+.content-border:hover {
+    transform: translateY(-10px);
+}
 
-        /* Image Styling */
-        img {
-            width: 100%;
-            max-width: 800px;
-            margin-top: 20px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
+/* Image Styling */
+img {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
 
-        /* Related Links Section */
-        .related-links ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
+/* Related Links Section */
+.related-links ul {
+    list-style-type: none;
+    padding-left: 0;
+}
 
-        .related-links li {
-            margin: 15px 0;
-        }
+.related-links li {
+    margin: 15px 0;
+}
 
-        .related-links a {
-            text-decoration: none;
-            color: #3498db;
-            font-size: 20px;
-            font-weight: bold;
-            letter-spacing: 1px;
-            transition: color 0.3s ease, transform 0.3s ease;
-        }
+.related-links a {
+    text-decoration: none;
+    color: #3498db;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
 
-        /* Hover Effect for Related Links */
-        .related-links a:hover {
-            color: #2980b9;
-            transform: scale(1.1);
-        }
+/* Hover Effect for Related Links */
+.related-links a:hover {
+    color: #2980b9;
+    transform: scale(1.1);
+}
 
-        .related-links a:active {
-            transform: scale(1.05);
-        }
+.related-links a:active {
+    transform: scale(1.05);
+}
 
-        /* Styling for Backgrounds & Borders */
-        .container {
-            background-color: #ecf0f1;
-            padding: 30px;
-            border-radius: 10px;
-            margin-top: 50px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-        }
+/* Styling for Backgrounds & Borders */
+.container {
+    background-color: #ecf0f1; /* Lighter grey background */
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 50px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
 
-        .footer {
-            text-align: center;
-            margin-top: 50px;
-            font-size: 18px;
-            color: #7f8c8d;
-            padding: 10px;
-        }
+.footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 18px;
+    color: #7f8c8d;
+    padding: 10px;
+}
 
-        /* Hover Effects for Images */
-        .city-plan img:hover, .business-cases img:hover {
-            transform: scale(1.05);
-            transition: transform 0.3s ease-in-out;
-        }
-    </style>
-</head>
-<body>
-
-<header>
-    Course Project Overview
-</header>
-
-<div class="container">
-    <!-- City Plan Section -->
-    <section class="city-plan">
-        <h2>City Plan</h2>
-        <div class="content-border">
-            <img src="https://01fe23bcs277.github.io/daa/city.jpg" alt="City Plan">
-        </div>
-    </section>
-
-    <!-- Business Cases Section -->
-    <section class="business-cases">
-        <h2>Business Cases</h2>
-        <div class="content-border">
-            <img src="https://01fe23bcs277.github.io/daa/Screenshot%202024-12-29%20232710.png" alt="Business Cases">
-        </div>
-    </section>
-
-    <!-- Related Links Section -->
-    <section class="related-links">
-        <h2>Related Links</h2>
-        <div class="content-border">
-            <ul>
-                <li><a href="https://01fe23bcs277.github.io/daa/case1.html" target="_blank">Business Case 1</a></li>
-                <li><a href="https://01fe23bcs277.github.io/daa/case2.html" target="_blank">Business Case 2</a></li>
-                <li><a href="https://01fe23bcs277.github.io/daa/case3.html" target="_blank">Business Case 3</a></li>
-                <li><a href="https://01fe23bcs277.github.io/daa/case4.html" target="_blank">Business Case 4</a></li>
-                <li><a href="https://01fe23bcs277.github.io/daa/case5.html" target="_blank">Business Case 5</a></li>
-                <li><a href="https://01fe23bcs277.github.io/daa/case6.html" target="_blank">Business Case 6</a></li>
-            </ul>
-        </div>
-    </section>
-</div>
-
-<div class="footer">
-    <p>Explore the innovative solutions that power a smart city!</p>
-</div>
-
-</body>
-</html>
+/* Hover Effects for Images */
+.city-plan img:hover, .business-cases img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}

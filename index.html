@@ -9,15 +9,17 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: #333;
         }
         
         header {
-            background-color: #333;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
             color: white;
             text-align: center;
             padding: 100px 20px;
             box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 0 0 50px 50px;
         }
         header h1 {
             font-size: 5em;
@@ -32,10 +34,13 @@
         }
 
         nav {
-            background-color: #333;
+            background-color: #222;
             display: flex;
             justify-content: center;
             padding: 20px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            border-radius: 50px;
+            margin: 20px;
         }
 
         nav a {
@@ -44,27 +49,33 @@
             padding: 15px 40px;
             font-size: 1.5em;
             margin: 0 15px;
-            background-color: #ff6f61;
+            background: linear-gradient(to right, #ff6f61, #ff9478);
             border-radius: 25px;
-            transition: background-color 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
         nav a:hover {
-            background-color: #ffb74d;
+            transform: scale(1.1);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
         }
 
         section {
             padding: 60px 20px;
             text-align: center;
-            background-color: #fff;
-            margin: 40px 0;
+            background: #fff;
+            margin: 40px 20px;
             box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
+            border-radius: 20px;
+            animation: fadeIn 1.5s;
         }
 
         section h2 {
             font-size: 3em;
             color: #333;
             margin-bottom: 20px;
+            border-bottom: 3px solid #ff6f61;
+            display: inline-block;
+            padding-bottom: 10px;
         }
 
         section p {
@@ -78,6 +89,11 @@
             color: white;
             padding: 20px;
             text-align: center;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         /* Mobile responsiveness */
@@ -128,6 +144,17 @@
         <h2>What Kind of Data Structures and Algorithms Have You Studied?</h2>
         <p><strong>Data Structures:</strong> Arrays, Lists, Stacks, Queues, Linked Lists, Binary Trees, AVL Trees, Red-Black Trees, 2-3 Trees, Tries, Graphs, Heaps, Sparse Tables, Segment Trees, Fenwick Trees, Skip Lists.</p>
         <p><strong>Algorithms:</strong> Design Philosophy, Space & Time Complexities, Order of an Algorithm, Recursion, Iteration, Backtracking, Sorting (Bubble Sort, Quick Sort, Merge Sort, Heap Sort), Searching (Binary Search, Brute Force, Boyer-Moore, Rabin-Karp), Graph (Dijkstra's, Bellman-Ford, Prim's, Kruskal's, DFS, BFS), Hashing, Union-Find, Knapsack, Travelling Salesperson, String Matching (KMP, Boyer-Moore, Rabin-Karp), Divide and Conquer, Dynamic Programming.</p>
+    </section>
+
+    <!-- Real-Time Applications Section -->
+    <section id="real-time-applications">
+        <h2>How Do You Connect the Course with Real-Time Applications?</h2>
+        <p>Use advanced algorithms like searching and sorting to display results quickly and accurately when you perform a search.</p>
+        <p>Graph structures power features like recommending friends or connections based on mutual relationships, as seen on platforms like Facebook or LinkedIn.</p>
+        <p>Pathfinding algorithms such as Dijkstra’s help find the shortest or fastest route to your destination, enabling efficient navigation in apps like Google Maps.</p>
+        <p>Stack data structures enable undo/redo functionalities in applications like text editors (MS Word) or design tools (Photoshop).</p>
+        <p>Sorting algorithms help arrange products by price, relevance, or popularity, while searching algorithms allow users to find products efficiently.</p>
+        <p>Trees and linked lists are used to store, retrieve, and manage data in databases and operating systems.</p>
     </section>
 
     <!-- Footer Section -->

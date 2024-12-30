@@ -10,7 +10,7 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: linear-gradient(to bottom right, #00bcd4, #8e44ad);
             color: #333;
         }
 
@@ -97,11 +97,17 @@
             font-size: 20px;
             font-weight: bold;
             letter-spacing: 1px;
-            transition: color 0.3s ease;
+            transition: color 0.3s ease, transform 0.3s ease;
         }
 
+        /* Hover Effect for Related Links */
         .related-links a:hover {
             color: #2980b9;
+            transform: scale(1.1);
+        }
+
+        .related-links a:active {
+            transform: scale(1.05);
         }
 
         /* Styling for Backgrounds & Borders */

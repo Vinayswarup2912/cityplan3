@@ -5,16 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My DAA Portfolio</title>
     <style>
-        /* Global Styles */
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
         }
-
+        
         header {
-            background: linear-gradient(to right, #ff6f61, #ffb74d);
+            background-color: #333;
             color: white;
             text-align: center;
             padding: 100px 20px;
@@ -22,36 +21,37 @@
         }
         header h1 {
             font-size: 5em;
+            margin: 0;
+            font-weight: bold;
             text-transform: uppercase;
-            letter-spacing: 4px;
         }
         header p {
             font-size: 1.5em;
-            margin-top: 15px;
+            margin-top: 20px;
             font-weight: lighter;
         }
 
-        /* Navigation Styles */
         nav {
             background-color: #333;
-            text-align: center;
+            display: flex;
+            justify-content: center;
             padding: 20px 0;
         }
+
         nav a {
-            text-decoration: none;
             color: white;
-            font-size: 1.5em;
+            text-decoration: none;
             padding: 15px 40px;
-            margin: 0 20px;
+            font-size: 1.5em;
+            margin: 0 15px;
             background-color: #ff6f61;
-            border-radius: 50px;
+            border-radius: 25px;
             transition: background-color 0.3s ease;
         }
         nav a:hover {
             background-color: #ffb74d;
         }
 
-        /* Section Styles */
         section {
             padding: 60px 20px;
             text-align: center;
@@ -62,33 +62,10 @@
         }
 
         section h2 {
-            font-size: 3.5em;
-            color: #ff6f61;
-            margin-bottom: 20px;
-        }
-        section p {
-            font-size: 1.5em;
-            color: #555;
-            line-height: 1.8;
+            font-size: 3em;
+            color: #333;
         }
 
-        /* Button Styling */
-        .cta-button {
-            font-size: 1.8em;
-            text-decoration: none;
-            color: white;
-            background-color: #ff6f61;
-            padding: 20px 50px;
-            margin-top: 30px;
-            border-radius: 50px;
-            display: inline-block;
-            transition: background-color 0.3s ease;
-        }
-        .cta-button:hover {
-            background-color: #ffb74d;
-        }
-
-        /* Footer Styles */
         footer {
             background-color: #333;
             color: white;
@@ -96,7 +73,7 @@
             text-align: center;
         }
 
-        /* Mobile Responsiveness */
+        /* Mobile responsiveness */
         @media (max-width: 768px) {
             header h1 {
                 font-size: 3.5em;
@@ -106,7 +83,7 @@
             }
             nav a {
                 font-size: 1.2em;
-                padding: 10px 25px;
+                padding: 10px 20px;
             }
         }
     </style>
@@ -130,29 +107,25 @@
     <!-- Team Overview Section -->
     <section id="team-overview">
         <h2>Team Overview</h2>
-        <p>Meet the brilliant minds behind this project! Our team has worked collaboratively to solve real-world challenges by applying algorithmic principles. Each team member brings their own expertise to the table.</p>
-        <a href="#course-overview" class="cta-button">Explore Course Overview</a>
+        <p>Learn about the brilliant minds behind this project! Our team combines expertise in algorithms, data structures, and real-world problem-solving.</p>
     </section>
 
     <!-- Course Overview Section -->
     <section id="course-overview">
         <h2>Course Overview</h2>
-        <p>The DAA course is designed to teach us how to approach complex problems systematically by breaking them down into smaller tasks and solving them efficiently. We’ve studied a wide variety of algorithms, including sorting, searching, recursion, dynamic programming, and graph algorithms.</p>
-        <a href="#project-overview" class="cta-button">Discover the Project Overview</a>
+        <p>The DAA course is designed to teach us how to break down complex problems and solve them efficiently using various algorithms and data structures.</p>
     </section>
 
     <!-- Project Overview Section -->
     <section id="project-overview">
         <h2>Project Overview</h2>
-        <p>Our project focuses on optimizing city traffic flow using graph algorithms, sorting techniques, and more. We've explored different algorithmic approaches to solve real-world urban planning problems, ensuring efficiency in both time and space.</p>
-        <a href="#course-reflections" class="cta-button">Read Course Reflections</a>
+        <p>Our project focuses on solving real-world problems like optimizing city traffic flow using graph algorithms, sorting techniques, and more.</p>
     </section>
 
     <!-- Course Reflections Section -->
     <section id="course-reflections">
         <h2>Course Reflections</h2>
-        <p>In this section, I reflect on the key learnings from the course. From recursion to space and time efficiency, I've gained deep insights into how different algorithmic strategies solve problems in various domains.</p>
-        <a href="javascript:void(0);" class="cta-button">Contact Me</a>
+        <p>This section explores key takeaways from the course, such as recursion, time and space efficiency, and how different algorithms solve real-world challenges.</p>
     </section>
 
     <!-- Footer Section -->

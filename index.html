@@ -5,126 +5,152 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My DAA Portfolio</title>
     <style>
+        /* Basic Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
-        section {
-            padding: 20px;
-            margin: 10px;
-            background-color: white;
-            border-radius: 5px;
-        }
-        h1, h2 {
+            background-color: #f1f1f1;
             color: #333;
         }
-        .content {
-            margin-bottom: 30px;
-        }
-        .team-member {
-            display: inline-block;
-            width: 45%;
-            padding: 15px;
-            margin: 10px;
-            background-color: #f9f9f9;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        footer {
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(to right, #4CAF50, #8BC34A);
+            color: white;
+            padding: 60px 20px;
             text-align: center;
-            padding: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 4em;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        header p {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+
+        /* Navigation Styles */
+        nav {
+            text-align: center;
+            background-color: #333;
+            padding: 15px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            margin: 0 15px;
+            border-radius: 30px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #8BC34A;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 40px 20px;
+            margin: 30px 0;
+            background-color: white;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.3em;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Button Styling */
+        .cta-button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.5em;
+            text-decoration: none;
+            border-radius: 30px;
+            margin-top: 30px;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #388E3C;
+        }
+
+        /* Footer Styles */
+        footer {
             background-color: #333;
             color: white;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 3em;
+            }
+            header p {
+                font-size: 1.2em;
+            }
+            nav a {
+                font-size: 1em;
+                padding: 8px 15px;
+            }
         }
     </style>
 </head>
 <body>
+
+    <!-- Header Section -->
     <header>
         <h1>My DAA Portfolio</h1>
-        <p>Design and Analysis of Algorithms – Course Reflections</p>
+        <p>Design and Analysis of Algorithms</p>
     </header>
 
-    <section>
-        <h2>1. Introduction to the Course</h2>
-        <div class="content">
-            <p>The Design and Analysis of Algorithms (DAA) course covers the fundamental principles behind creating efficient algorithms to solve complex problems. In this course, we've studied various data structures, such as arrays, linked lists, stacks, queues, trees, graphs, and heaps. We also explored algorithms like sorting, searching, recursion, and dynamic programming.</p>
-            <p>This course connects directly to real-time applications, such as optimizing traffic flow in city planning, improving search engine algorithms, and developing efficient scheduling systems. Understanding time and space complexity allows us to optimize solutions, making them more practical and scalable in real-world scenarios.</p>
-        </div>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#introduction">Introduction</a>
+        <a href="#project">Course Project</a>
+        <a href="#reflections">Course Reflections</a>
+    </nav>
+
+    <!-- Introduction Section -->
+    <section id="introduction">
+        <h2>Welcome to My DAA Portfolio</h2>
+        <p>Design and Analysis of Algorithms (DAA) is a course that delves into creating efficient algorithms to solve complex problems. In this portfolio, I will reflect on various data structures, algorithms, and real-time applications that I've explored throughout the course. The insights and reflections shared here will give you an understanding of how algorithms shape the solutions to everyday problems.</p>
+        <a href="#project" class="cta-button">Explore My Project</a>
     </section>
 
-    <section>
-        <h2>2. Course Project Introduction</h2>
-        <div class="content">
-            <h3>Problem Space and Findings</h3>
-            <p>Our project focuses on analyzing city traffic and designing an optimal traffic management system. We examined data from various cities and created models that could improve traffic flow by applying graph algorithms like Dijkstra's algorithm for shortest paths and minimum spanning trees for efficient road network design.</p>
-            <h3>Business Cases</h3>
-            <p>Each team member worked on specific business cases, such as optimizing bus routes, reducing congestion, and minimizing fuel consumption. These real-world cases directly connect algorithmic problem-solving with practical solutions for urban development.</p>
-            <h3>Team Details</h3>
-            <ul>
-                <li><strong>Member 1:</strong> Focused on sorting algorithms and their impact on data retrieval for traffic management.</li>
-                <li><strong>Member 2:</strong> Worked on graph traversal algorithms for route optimization in urban planning.</li>
-                <li><strong>Member 3:</strong> Addressed time and space complexity issues for scalable solutions in large cities.</li>
-                <li><strong>Member 4:</strong> Studied recursion and backtracking for optimizing schedules and event planning.</li>
-            </ul>
-        </div>
+    <!-- Course Project Section -->
+    <section id="project">
+        <h2>Course Project Introduction</h2>
+        <p>This section will detail the problem space we explored in our team project, the challenges we identified, and how we applied graph algorithms, sorting methods, and optimization techniques to improve urban traffic management and other real-world applications.</p>
+        <a href="#reflections" class="cta-button">See My Reflections</a>
     </section>
 
-    <section>
-        <h2>3. Course Learning Reflections</h2>
-        <div class="content">
-            <h3>Reflections on Core Topics</h3>
-            <div class="team-member">
-                <h4>Iteration, Recursion, and Backtracking</h4>
-                <p>I explored how recursion simplifies the breakdown of problems into smaller, manageable components. In comparison, iteration helps handle large datasets efficiently. Backtracking plays a vital role in problems like puzzle solving and scheduling.</p>
-            </div>
-            <div class="team-member">
-                <h4>Space and Time Efficiency</h4>
-                <p>Space and time efficiency are essential for evaluating the practicality of algorithms. Problems like sorting and searching are often evaluated based on these metrics to ensure that solutions are feasible for large inputs. Time complexity, such as O(n log n) or O(n^2), helps in understanding algorithm performance.</p>
-            </div>
-            <div class="team-member">
-                <h4>Design Principles</h4>
-                <p>The design principles like Divide and Conquer, Greedy Algorithms, and Dynamic Programming have been crucial in solving complex problems efficiently. Each technique is applied depending on the nature of the problem at hand, optimizing performance and resource utilization.</p>
-            </div>
-            <div class="team-member">
-                <h4>Tree and Graph Data Structures</h4>
-                <p>Different tree structures like AVL trees, red-black trees, and heaps help in optimizing search and retrieval processes. Graph algorithms are used in networking, social networks, and city design for shortest path calculations and connectivity analysis.</p>
-            </div>
-            <div class="team-member">
-                <h4>Array Query Algorithms</h4>
-                <p>Efficient querying in large datasets is achieved using array-based algorithms. Techniques such as binary search and dynamic arrays optimize the access and manipulation of data, which are crucial in handling real-time information.</p>
-            </div>
-            <div class="team-member">
-                <h4>Tree vs Graph Traversals</h4>
-                <p>Tree and graph traversal techniques, such as DFS and BFS, are essential for exploring structures. Trees are used for hierarchical data like file systems, while graphs model networks and connections between nodes, essential for applications like web crawling and social network analysis.</p>
-            </div>
-            <div class="team-member">
-                <h4>Sorting and Searching Algorithms</h4>
-                <p>Algorithms like QuickSort, MergeSort, and Binary Search are foundational in computer science. They are essential for organizing data, searching through databases, and optimizing retrieval times in applications like e-commerce websites.</p>
-            </div>
-            <div class="team-member">
-                <h4>Graph Algorithms</h4>
-                <p>Graph algorithms are used to solve real-world problems such as finding the shortest path (Dijkstra) and identifying connected components. These algorithms are critical in routing, networking, and urban planning applications.</p>
-            </div>
-            <div class="team-member">
-                <h4>Algorithm Design Techniques</h4>
-                <p>The techniques studied in this course, such as greedy algorithms, divide and conquer, and dynamic programming, are applicable in various optimization problems, helping in resource allocation, task scheduling, and decision-making.</p>
-            </div>
-        </div>
+    <!-- Course Reflections Section -->
+    <section id="reflections">
+        <h2>Course Learning Reflections</h2>
+        <p>Throughout the course, I've learned about recursion, dynamic programming, tree and graph algorithms, and much more. In the following sections, I will share my personal reflections on these topics, their real-world applications, and how they helped shape my understanding of problem-solving strategies.</p>
+        <a href="javascript:void(0);" class="cta-button">Contact Me</a>
     </section>
 
+    <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 My DAA Portfolio | All Rights Reserved</p>
     </footer>
+
 </body>
 </html>

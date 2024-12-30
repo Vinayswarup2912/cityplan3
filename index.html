@@ -76,12 +76,14 @@
             border-bottom: 3px solid #ff6f61;
             display: inline-block;
             padding-bottom: 10px;
+            animation: slideIn 1.5s;
         }
 
         section p {
             font-size: 1.2em;
             line-height: 1.8;
             color: #555;
+            animation: fadeInUp 1.5s ease-in-out;
         }
 
         footer {
@@ -93,6 +95,16 @@
 
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(50px); }
             to { opacity: 1; transform: translateY(0); }
         }
 
@@ -158,9 +170,4 @@
     </section>
 
     <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 My DAA Portfolio | All Rights Reserved</p>
-    </footer>
-
-</body>
-</html>
+   

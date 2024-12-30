@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Overview - Algorithms</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            font-size: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        section {
+            margin: 20px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #2980b9;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .list-item {
+            margin-left: 20px;
+        }
+
+        .section-title {
+            color: #2c3e50;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .related-links {
+            margin-top: 20px;
+        }
+
+        .related-links ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .related-links li {
+            margin: 8px 0;
+        }
+
+        .related-links a {
+            text-decoration: none;
+            color: #3498db;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .related-links a:hover {
+            color: #2980b9;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Algorithm Design and Analysis - Course Overview
+</header>
+
+<section>
+    <h2>1. Problems in Nature</h2>
+    <p><strong>Iteration:</strong> Repeats steps in a loop until the job is done. Examples: The sun rising and setting, counting tree rings.</p>
+    <p><strong>Recursion:</strong> Solves a problem by breaking it into smaller steps. Examples: Tree branches, factorials (5! = 5 × 4 × 3 × 2 × 1).</p>
+    <p><strong>Backtracking:</strong> Uses trial and error to find solutions. Examples: Ants finding food, solving mazes.</p>
+    <p><strong>Divide and Conquer:</strong> Breaks and combines data. Examples: Merging records, sorting.</p>
+    <p><strong>Greedy Algorithm:</strong> Takes the biggest bills first in ATM withdrawal, and chooses the task that ends quickest in activity scheduling.</p>
+    <p><strong>Dynamic Programming:</strong> Solves parts of a route to find the best one in route planning, and remembers results to avoid doing the same work again in Fibonacci.</p>
+    <p><strong>Graph Algorithms:</strong> Includes Dijkstra’s algorithm (Shortest Path) and Prim’s/Kruskal’s algorithm (MST).</p>
+    <p><strong>Sorting Algorithms:</strong> Task sorting, ticket sorting.</p>
+    <p><strong>Searching Algorithms:</strong> Linear search, binary search.</p>
+</section>
+
+<section>
+    <h2>2. Space and Time Efficiency</h2>
+    <p><strong>Space Efficiency:</strong> How much memory an algorithm uses. Fewer resources are better.</p>
+    <p><strong>Time Efficiency:</strong> How fast an algorithm runs. Faster performance leads to better outcomes.</p>
+    <p><strong>Why It Matters:</strong> Optimized performance, efficient memory use, scalability, real-world impact, and resource constraints.</p>
+    <p><strong>Time and Space Complexity Examples:</strong></p>
+    <ul class="list-item">
+        <li>O(1) - Array access</li>
+        <li>O(log n) - Binary search</li>
+        <li>O(n) - Loop through list</li>
+        <li>O(n log n) - Merge Sort</li>
+        <li>O(n²) - Bubble Sort</li>
+        <li>O(2^n) - Brute force</li>
+        <li>O(n!) - Generating permutations</li>
+    </ul>
+</section>
+
+<section>
+    <h2>3. Design Principles</h2>
+    <p><strong>Shortest Path Trees:</strong> Finds the most efficient routes. Example: GPS routing.</p>
+    <p><strong>Partitioning:</strong> Breaks down complex problems into smaller segments. Example: Quicksort.</p>
+    <p><strong>Balancing and Rotations:</strong> Prevents performance degradation in trees. Example: AVL trees, Red-Black trees.</p>
+    <p><strong>Edge Relaxation:</strong> Allows dynamic updating of path solutions. Example: Dijkstra’s shortest path algorithm.</p>
+    <p><strong>Level Order Traversal:</strong> Implements breadth-first approach. Important for tree and graph navigation.</p>
+    <p><strong>Pruning:</strong> Eliminates unnecessary or invalid solution paths. Example: Chess algorithms.</p>
+</section>
+
+<section>
+    <h2>4. Hierarchical Data Structures</h2>
+    <p><strong>Tree:</strong> Simple structure for representing hierarchies like filesystems, organizations.</p>
+    <p><strong>Binary Search Tree (BST):</strong> Efficient (O(log n)) for sorted data storage and retrieval.</p>
+    <p><strong>AVL Tree:</strong> Guarantees O(log n) operations by maintaining balance.</p>
+    <p><strong>2-3 Tree:</strong> Ensures perfect balance with multi-child nodes.</p>
+    <p><strong>Heap:</strong> Used for priority management and sorting. O(log n) for insert/extract.</p>
+    <p><strong>Trie:</strong> Efficient for string and prefix searches.</p>
+</section>
+
+<section>
+    <h2>5. Array Query Algorithms</h2>
+    <p><strong>Why Needed:</strong> Efficient data access, optimized operations, dynamic applications, memory efficiency.</p>
+    <p><strong>Applications:</strong> Range Queries, Dynamic Updates, Prefix Queries, Static Queries, Pattern Matching.</p>
+</section>
+
+<section>
+    <h2>6. Trees and Graphs</h2>
+    <p><strong>Tree:</strong> A hierarchical structure with one root and nodes connected in a parent-child relationship.</p>
+    <p><strong>Graph:</strong> A collection of nodes connected by edges. Can be cyclic or acyclic, and directed or undirected.</p>
+    <p><strong>Traversals:</strong> Pre-order, in-order, post-order, level-order (BFS), DFS, BFS for graphs.</p>
+    <p><strong>Applications:</strong> Trees in file systems, expression trees, decision trees in ML, and graphs in social networks, GPS navigation.</p>
+</section>
+
+<section>
+    <h2>7. Sorting and Searching Algorithms</h2>
+    <p><strong>Sorting Algorithms:</strong> Bubble Sort, Insertion Sort, Merge Sort, Quick Sort, Heap Sort.</p>
+    <p><strong>Searching Algorithms:</strong> Linear Search, Binary Search, Hashing, DFS, BFS.</p>
+    <p><strong>Applications:</strong> Databases, E-commerce, Web Search Engines, and Navigation systems.</p>
+</section>
+
+<section>
+    <h2>8. Graph Algorithms: Spanning Trees and Shortest Paths</h2>
+    <p><strong>Spanning Trees:</strong> Connects all nodes with the fewest edges, no cycles. Key algorithms: Kruskal’s, Prim’s.</p>
+    <p><strong>Shortest Path Algorithms:</strong> Dijkstra’s, Bellman-Ford, A* Algorithm.</p>
+    <p><strong>Applications:</strong> Network Design, Cluster Analysis, Navigation, Logistics.</p>
+</section>
+
+<section>
+    <h2>9. Algorithm Design Techniques</h2>
+    <p><strong>Brave and Cautious Travel:</strong> Combines DFS (brave) and BFS (cautious) for problem-solving.</p>
+    <p><strong>Lazy Propagation:</strong> Delays updates until needed. Example: Efficient range queries.</p>
+    <p><strong>Edge Relaxation:</strong> Gradual updates in path solutions during graph traversal.</p>
+    <p><strong>Balancing and Rotations:</strong> Keeps data structures balanced for faster operations. Example: AVL and Red-Black Trees.</p>
+</section>
+
+<footer>
+    © 2024 Algorithm Design and Analysis Course | All Rights Reserved
+</footer>
+
+</body>
+</html>

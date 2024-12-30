@@ -3,170 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Overview</title>
+    <title>My DAA Portfolio</title>
     <style>
-        /* General Styles */
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to bottom right, #bdc3c7, #7f8c8d); /* Gray gradient background */
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
             color: #333;
         }
-
-        /* Header Style */
+        
         header {
-            text-align: center;
-            font-size: 40px;
-            font-weight: bold;
-            padding: 20px;
-            background-color: #e74c3c;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
             color: white;
-            border-bottom: 8px solid #c0392b;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Section Styling */
-        section {
-            margin: 40px 20px;
             text-align: center;
+            padding: 100px 20px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 0 0 50px 50px;
         }
-
-        h2 {
-            font-size: 28px;
-            font-weight: 600;
-            color: #2c3e50;
+        header h1 {
+            font-size: 5em;
+            margin: 0;
+            font-weight: bold;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-top: 30px;
-            position: relative;
         }
-
-        h2::after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 4px;
-            background-color: #e74c3c;
-            bottom: -10px;
-            left: 0;
-            border-radius: 2px;
-        }
-
-        /* Content Border & Shadow */
-        .content-border {
-            background-color: #fff;
-            border-radius: 12px;
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-            padding: 30px;
-            margin-top: 40px;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .content-border:hover {
-            transform: translateY(-10px);
-        }
-
-        /* Image Styling */
-        img {
-            width: 100%;
-            max-width: 800px;
+        header p {
+            font-size: 1.5em;
             margin-top: 20px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            border-radius: 10px;
+            font-weight: lighter;
+        }
+
+        nav {
+            background-color: #222;
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            border-radius: 50px;
+            margin: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 40px;
+            font-size: 1.5em;
+            margin: 0 15px;
+            background: linear-gradient(to right, #ff6f61, #ff9478);
+            border-radius: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
-
-        /* Related Links Section */
-        .related-links ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        .related-links li {
-            margin: 15px 0;
-        }
-
-        .related-links a {
-            text-decoration: none;
-            color: #3498db;
-            font-size: 20px;
-            font-weight: bold;
-            letter-spacing: 1px;
-            transition: color 0.3s ease, transform 0.3s ease;
-        }
-
-        /* Hover Effect for Related Links with motion */
-        .related-links a:hover {
-            color: #2980b9;
+        nav a:hover {
             transform: scale(1.1);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
         }
 
-        .related-links a:active {
-            transform: scale(1.05);
-        }
-
-        /* Styling for Backgrounds & Borders */
-        .container {
-            background-color: #ecf0f1; /* Lighter grey background */
-            padding: 30px;
-            border-radius: 10px;
-            margin-top: 50px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-        }
-
-        .footer {
+        section {
+            padding: 60px 20px;
             text-align: center;
-            margin-top: 50px;
-            font-size: 18px;
-            color: #7f8c8d;
-            padding: 10px;
+            background: #fff;
+            margin: 40px 20px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            animation: fadeIn 1.5s;
         }
 
-        /* Hover Effects for Images */
-        .city-plan img:hover, .business-cases img:hover {
-            transform: scale(1.05);
-            transition: transform 0.3s ease-in-out;
+        section h2 {
+            font-size: 3em;
+            color: #333;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #ff6f61;
+            display: inline-block;
+            padding-bottom: 10px;
+            animation: slideIn 1.5s;
+        }
+
+        section p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #555;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 3.5em;
+            }
+            header p {
+                font-size: 1.2em;
+            }
+            nav a {
+                font-size: 1.2em;
+                padding: 10px 20px;
+            }
         }
     </style>
 </head>
 <body>
 
-<header>
-    Course Project Overview
-</header>
+    <!-- Header Section -->
+    <header>
+        <h1>My DAA Portfolio</h1>
+        <p>Design and Analysis of Algorithms - A Comprehensive Journey</p>
+    </header>
 
-<section>
-    <h2>City Plan</h2>
-    <div class="content-border">
-        <img src="https://01fe23bcs277.github.io/daa/city.jpg" alt="City Plan Image">
-    </div>
-</section>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="team-overview.html">Team Overview</a>
+        <a href="course-overview.html">Course Overview</a>
+        <a href="project-overview.html">Project Overview</a>
+        <a href="course-reflections.html">Course Reflections</a>
+    </nav>
 
-<section>
-    <h2>Business Cases</h2>
-    <div class="content-border">
-        <img src="https://01fe23bcs277.github.io/daa/Screenshot%202024-12-29%20232710.png" alt="Business Case Image">
-    </div>
-</section>
+    <!-- Course Introduction Section -->
+    <section id="course-introduction">
+        <h2>Course Introduction</h2>
+        <p>Welcome to the world of Data Structures and Algorithms (DSA), where the art of problem-solving meets the elegance of efficient computation. This course will equip you with the fundamental building blocks of computer science, enabling you to organize, manage, and process data with unparalleled efficiency. Exploring a diverse range of data structures, from arrays and linked lists to trees and graphs, and delve into a rich repertoire of algorithms, including sorting, searching, and dynamic programming. By mastering these core concepts, you'll not only improve your coding skills but also cultivate a deep understanding of how computers work and how to optimize their performance.</p>
+    </section>
 
-<section>
-    <h2>Related Links</h2>
-    <div class="content-border related-links">
-        <ul>
-            <li><a href="https://01fe23bcs277.github.io/daa/case1.html" target="_blank">Business Case 1</a></li>
-            <li><a href="https://01fe23bcs277.github.io/daa/case2.html" target="_blank">Business Case 2</a></li>
-            <li><a href="https://01fe23bcs277.github.io/daa/case3.html" target="_blank">Business Case 3</a></li>
-            <li><a href="https://01fe23bcs277.github.io/daa/case4.html" target="_blank">Business Case 4</a></li>
-            <li><a href="https://01fe23bcs277.github.io/daa/case5.html" target="_blank">Business Case 5</a></li>
-            <li><a href="https://01fe23bcs277.github.io/daa/case6.html" target="_blank">Business Case 6</a></li>
-        </ul>
-    </div>
-</section>
+    <!-- What is the Course About Section -->
+    <section id="what-is-course-about">
+        <h2>What is the Course About?</h2>
+        <p>This course is about mastering the fundamentals of Data Structures and Algorithms (DSA), which are the building blocks of efficient problem-solving in computer science. We learn how to organize, store, and process data effectively using various structures like arrays, linked lists, stacks, queues, trees, and graphs. Alongside, Exploring algorithms step-by-step methods to solve problems ranging from sorting and searching to dynamic programming and graph traversal. The course emphasizes writing efficient code by analyzing the time and space complexity of algorithms, helping you create solutions that are not just correct but also optimal. By the end of this course, we’ll gain the tools and mindset to tackle computational challenges, whether in academic projects, competitive programming, or real-world applications.</p>
+    </section>
 
-</body>
-</html>
+    <!-- Data Structures and Algorithms Section -->
+    <section id="data-structures-algorithms">
+        <h2>What Kind of Data Structures and Algorithms Have You Studied?</h2>
+        <p><strong>Data Structures:</strong> Arrays, Lists, Stacks, Queues, Linked Lists, Binary Trees, AVL Trees, Red-Black Trees, 2-3 Trees, Tries, Graphs, Heaps, Sparse Tables, Segment Trees, Fenwick Trees, Skip Lists.</p>
+        <p><strong>Algorithms:</strong> Design Philosophy, Space & Time Complexities, Order of an Algorithm, Recursion, Iteration, Backtracking, Sorting (Bubble Sort, Quick Sort, Merge Sort, Heap Sort), Searching (Binary Search, Brute Force, Boyer-Moore, Rabin-Karp), Graph (Dijkstra's, Bellman-Ford, Prim's, Kruskal's, DFS, BFS), Hashing, Union-Find, Knapsack, Travelling Salesperson, String Matching (KMP, Boyer-Moore, Rabin-Karp), Divide and Conquer, Dynamic Programming.</p>
+    </section>
+
+    <!-- Real-Time Applications Section -->
+    <section id="real-time-applications">
+        <h2>How Do You Connect the Course with Real-Time Applications?</h2>
+        <p>Use advanced algorithms like searching and sorting to display results quickly and accurately when you perform a search.</p>
+        <p>Graph structures power features like recommending friends or connections based on mutual relationships, as seen on platforms like Facebook or LinkedIn.</p>
+        <p>Pathfinding algorithms such as Dijkstra’s help find the shortest or fastest route to your destination, enabling efficient navigation in apps like Google Maps.</p>
+        <p>Stack data structures enable undo/redo functionalities in applications like text editors (MS Word) or design tools (Photoshop).</p>
+        <p>Sorting algorithms help arrange products by price, relevance, or popularity, while searching algorithms allow users to find products efficiently.</p>
+        <p>Trees and linked lists are used to store, retrieve, and manage data in databases and operating systems.</p>
+    </section>
+
+    <!-- Project Overview Section -->
+    <section id="project-overview">
+        <h2>Problem Space</h2>
+        <p>We aim to design an innovative 1500 sq. km smart city in Chandigarh, showcasing the expertise gained through our DAA course. With an ambitious budget of ₹10,000 crore, this project integrates state-of-the-art technologies, sustainable infrastructure, and six dynamic business models to drive economic growth, foster innovation, and enhance social well-being. Our vision is to create a future-ready
